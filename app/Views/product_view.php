@@ -26,34 +26,33 @@
     <?php 
         $a = 1;
     ?>
-    <tbody>
+      <tbody>
         <?php foreach($product as $row):?>
-            <tr class="row">
-                
-                <td class="text-center col-1"><?= $a++; ?></td>
-                <td class="text-center col-6"><?= $row['product_name'];?></td>
-                <td class="text-center col-2"><?= $row['product_price'];?></td>
-                <td class="text-center col-3">
-                    <!-- Show Button -->
-                    <a class="btn btn-info me-2 btn-show" href="#" data-bs-toggle="modal" data-bs-target="#showProductModal" 
-                      data-name="<?= $row['product_name'];?>" data-price="<?= $row['product_price'];?>">
-                      <i class="bi bi-search"></i>
-                    </a>
+            <tr class="row">   
+              <td class="text-center col-1"><?= $a++; ?></td>
+              <td class="text-center col-6"><?= $row['product_name'];?></td>
+              <td class="text-center col-2"><?= $row['product_price'];?></td>
+              <td class="text-center col-3">
+                  <!-- Show Button -->
+                  <a class="btn btn-info me-2 btn-show" href="#" data-bs-toggle="modal" data-bs-target="#showProductModal" 
+                    data-name="<?= $row['product_name'];?>" data-price="<?= $row['product_price'];?>">
+                    <i class="bi bi-search"></i>
+                  </a>
 
-                    <!-- Edit Button -->
-                    <a class="btn btn-warning me-2 btn-edit" href="#" data-bs-toggle="modal" data-bs-target="#editProductModal" 
-                      data-id="<?= $row['product_id'];?>" data-name="<?= $row['product_name'];?>" data-price="<?= $row['product_price'];?>" 
-                      data-bs-toggle="tooltip" data-bs-placement="top" title="Edit">
-                        <i class="bi bi-pencil"></i>
-                    </a>
+                  <!-- Edit Button -->
+                  <a class="btn btn-warning me-2 btn-edit" href="#" data-bs-toggle="modal" data-bs-target="#editProductModal" 
+                    data-id="<?= $row['product_id'];?>" data-name="<?= $row['product_name'];?>" data-price="<?= $row['product_price'];?>" 
+                    data-bs-toggle="tooltip" data-bs-placement="top" title="Edit">
+                      <i class="bi bi-pencil"></i>
+                  </a>
 
-                    <!-- Delete Button -->
-                    <a class="btn btn-danger btn-delete" href="#" data-bs-toggle="modal" data-bs-target="#deleteProductModal" 
-                      data-id="<?= $row['product_id']; ?>" data-name="<?= $row['product_name']; ?>" 
-                      data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
-                        <i class="bi bi-trash"></i>
-                    </a>
-                </td>
+                  <!-- Delete Button -->
+                  <a class="btn btn-danger btn-delete" href="#" data-bs-toggle="modal" data-bs-target="#deleteProductModal" 
+                    data-id="<?= $row['product_id']; ?>" data-name="<?= $row['product_name']; ?>" 
+                    data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
+                      <i class="bi bi-trash"></i>
+                  </a>
+              </td>
             </tr>
         <?php endforeach;?>
     </tbody>
@@ -165,10 +164,10 @@
 <script>
   // Add your JavaScript code for handling CRUD operations here
   // Function to handle displaying product details in the "Show Product" modal
-  function showProductDetails(name, price) {
-    document.getElementById('show_product_name').innerText = name;
-    document.getElementById('show_product_price').innerText = price;
-  }
+  // function showProductDetails(name, price) {
+  //   document.getElementById('show_product_name').innerText = name;
+  //   document.getElementById('show_product_price').innerText = price;
+  // }
 
   // Event listener for the "Show" buttons
   var showButtons = document.querySelectorAll('.btn-show');

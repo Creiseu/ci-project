@@ -3,7 +3,7 @@ use CodeIgniter\Model;
  
 class Product_model extends Model
 {
-    protected $table = 'product';
+    protected $table = ['product', 'users'];
     protected $primaryKey = 'product_id';
     protected $allowedFields = ['product_name', 'product_price'];
     public function getProduct($id = false)
