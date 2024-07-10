@@ -56,4 +56,8 @@ class Product extends Controller
         return redirect()->to('/product');
     }
     
+    public function newProduct()
+    {
+        echo view('peserta_form2');
+    }
 }

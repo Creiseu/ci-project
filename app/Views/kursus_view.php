@@ -18,25 +18,25 @@
                 var biayaKursus = "";
                 var biayaKelas = "";
 
-                if (materi == 'B.Inggris' && (waktu == 'Pagi - Siang' || waktu == 'Sore - Malam') && kelas == 'Reguler') {
+                if (materi == 'Men' && (waktu == 'Pagi - Siang' || waktu == 'Sore - Malam') && kelas == 'Reguler') {
                     biayaKursus = 10000000;
                     biayaKelas = 1000000;
                     $('#edit_biaya_kursus').val(biayaKursus);
                     $('#edit_biaya_kelas').val(biayaKelas);
                     $('#edit_total').val(biayaKursus + biayaKelas);
-                } else if (materi == 'B.Mandarin' && (waktu == 'Pagi - Siang' || waktu == 'Sore - Malam') && kelas == 'Reguler') {
+                } else if (materi == 'Women' && (waktu == 'Pagi - Siang' || waktu == 'Sore - Malam') && kelas == 'Reguler') {
                     biayaKursus = 5000000;
                     biayaKelas = 500000;
                     $('#edit_biaya_kursus').val(biayaKursus);
                     $('#edit_biaya_kelas').val(biayaKelas);
                     $('#edit_total').val(biayaKursus + biayaKelas);
-                } else if (materi == 'B.Jerman' && (waktu == 'Pagi - Siang' || waktu == 'Sore - Malam') && kelas == 'Reguler') {
+                } else if (materi == 'Kids' && (waktu == 'Pagi - Siang' || waktu == 'Sore - Malam') && kelas == 'Reguler') {
                     biayaKursus = 1000000;
                     biayaKelas = 100000;
                     $('#edit_biaya_kursus').val(biayaKursus);
                     $('#edit_biaya_kelas').val(biayaKelas);
                     $('#edit_total').val(biayaKursus + biayaKelas);
-                } else if ((materi == 'B.Inggris' || materi == 'B.Mandarin' || materi == 'B.Jerman') && (waktu == 'Pagi - Siang' || waktu == 'Sore - Malam') && kelas == 'Intensif') {
+                } else if ((materi == 'Men' || materi == 'Women' || materi == 'Kids') && (waktu == 'Pagi - Siang' || waktu == 'Sore - Malam') && kelas == 'Intensif') {
                     biayaKursus = 3000000;
                     biayaKelas = 300000;
                     $('#edit_biaya_kursus').val(biayaKursus);
@@ -44,7 +44,7 @@
                     $('#edit_total').val(biayaKursus + biayaKelas);
                 }
                 var biaya1 = document.getElementById("biaya_kursus").value = biayaKursus;
-                var biaya2 = document.getElementById("biaya_kelas").value = biayaKelas;
+                var biaya2 = document.getElementById("biaya_kursus").value = biayaKelas;
                 var total_semua = biaya1 + biaya2
                 document.getElementById("total").value = total_semua;
                 // Set nilai biaya kursus, biaya kelas, dan total ke dalam input
@@ -58,6 +58,7 @@
 <body>
 
 <div class="container mt-5">
+  <a href="/login/data/new">ADD NEW PRODUCT</a>
   <h2 class="mb-4">CRUD Table</h2>
   <table class="table table-bordered container-fluid">
     <thead>
@@ -87,14 +88,14 @@
               <td class="text-center col-1"><?= $row['waktu'];?></td>
               <td class="text-center col-1"><?= $row['kelas'];?></td>
               <td class="text-center col-1"><?= $row['biaya_kursus'];?></td>
-              <td class="text-center col-1"><?= $row['biaya_kelas'];?></td>
+              <td class="text-center col-1"><?= $row['biaya_kursus'];?></td>
               <td class="text-center col-1"><?= $row['total'];?></td>
               <td class="text-center col-3">
                   <!-- Show Button -->
                   <a class="btn btn-info me-2 btn-show" href="#" data-bs-toggle="modal" data-bs-target="#showProductModal" 
                     data-nomor-daftar="<?= $row['nomor_daftar'];?>" data-nama="<?= $row['nama'];?>" 
                     data-materi="<?= $row['materi'];?>"  data-waktu="<?= $row['waktu'];?>" data-kelas="<?= $row['kelas'];?>"
-                    data-biaya-kursus="<?= $row['biaya_kursus'];?>" data-biaya-kelas="<?= $row['biaya_kelas'];?>" data-total="<?= $row['total'];?>">
+                    data-biaya-kursus="<?= $row['biaya_kursus'];?>" data-biaya-kelas="<?= $row['biaya_kursus'];?>" data-total="<?= $row['total'];?>">
                     <i class="bi bi-search"></i>
                   </a>
 
@@ -102,7 +103,7 @@
                   <a class="btn btn-warning me-2 btn-edit" href="#" data-bs-toggle="modal" data-bs-target="#editProductModal" 
                     data-id="<?= $row['id'];?>" data-nomor-daftar="<?= $row['nomor_daftar'];?>" data-nama="<?= $row['nama'];?>" 
                     data-materi="<?= $row['materi'];?>"  data-waktu="<?= $row['waktu'];?>" data-kelas="<?= $row['kelas'];?>"
-                    data-biaya-kursus="<?= $row['biaya_kursus'];?>" data-biaya-kelas="<?= $row['biaya_kelas'];?>" data-total="<?= $row['total'];?>"
+                    data-biaya-kursus="<?= $row['biaya_kursus'];?>" data-biaya-kelas="<?= $row['biaya_kursus'];?>" data-total="<?= $row['total'];?>"
                     data-bs-toggle="tooltip" data-bs-placement="top" title="Edit">
                     <i class="bi bi-pencil"></i>
                   </a>
@@ -111,7 +112,7 @@
                   <a class="btn btn-danger btn-delete" href="#" data-bs-toggle="modal" data-bs-target="#deleteProductModal" 
                     data-id="<?= $row['id'];?>" data-nomor-daftar="<?= $row['nomor_daftar'];?>" data-nama="<?= $row['nama'];?>" 
                     data-materi="<?= $row['materi'];?>"  data-waktu="<?= $row['waktu'];?>" data-kelas="<?= $row['kelas'];?>"
-                    data-biaya-kursus="<?= $row['biaya_kursus'];?>" data-biaya-kelas="<?= $row['biaya_kelas'];?>" data-total="<?= $row['total'];?>" 
+                    data-biaya-kursus="<?= $row['biaya_kursus'];?>" data-biaya-kelas="<?= $row['biaya_kursus'];?>" data-total="<?= $row['total'];?>" 
                     data-bs-toggle="tooltip" data-bs-placement="top" title="Delete">
                     <i class="bi bi-trash"></i>
                   </a>
@@ -192,9 +193,9 @@
                     <label for="edit_materi" class="form-label">Materi</label>
                     <select id="edit_materi" name="edit_materi" class="form-select">
                         <option selected disabled>Choose...</option>
-                        <option value="B.Inggris">B.Inggris</option>
-                        <option value="B.Mandarin">B.Mandarin</option>
-                        <option value="B.Jerman">B.Jerman</option>
+                        <option value="Men">Men</option>
+                        <option value="Women">Women</option>
+                        <option value="Kids">Kids</option>
                     </select>
                 </div>
                 <div class="mb-3">
@@ -254,14 +255,14 @@
 <script>
   // Add your JavaScript code for handling CRUD operations here
   // Function to handle displaying product details in the "Show Product" modal
-  function showKursusDetails(nomor_daftar, nama, materi, waktu, kelas, biaya_kursus, biaya_kelas, total) {
+  function showKursusDetails(nomor_daftar, nama, materi, waktu, kelas, biaya_kursus, biaya_kursus, total) {
     document.getElementById('show_nomor_daftar').innerText = nomor_daftar;
     document.getElementById('show_nama').innerText = nama;
     document.getElementById('show_materi').innerText = materi;
     document.getElementById('show_waktu').innerText = waktu;
     document.getElementById('show_kelas').innerText = kelas;
     document.getElementById('show_biaya_kursus').innerText = biaya_kursus;
-    document.getElementById('show_biaya_kelas').innerText = biaya_kelas;
+    document.getElementById('show_biaya_kelas').innerText = biaya_kursus;
     document.getElementById('show_total').innerText = total;
   }
 
@@ -275,20 +276,20 @@
       var waktu = this.getAttribute('data-waktu');
       var kelas = this.getAttribute('data-kelas');
       var biaya_kursus = this.getAttribute('data-biaya-kursus');
-      var biaya_kelas = this.getAttribute('data-biaya-kelas');
+      var biaya_kursus = this.getAttribute('data-biaya-kelas');
       var total = this.getAttribute('data-total');
-      showKursusDetails(nomor_daftar, nama, materi, waktu, kelas, biaya_kursus, biaya_kelas, total);
+      showKursusDetails(nomor_daftar, nama, materi, waktu, kelas, biaya_kursus, biaya_kursus, total);
     });
   });
 
-  function fillEditModal(id, nama, materi, waktu, kelas, biaya_kursus, biaya_kelas, total) {
+  function fillEditModal(id, nama, materi, waktu, kelas, biaya_kursus, biaya_kursus, total) {
     document.getElementById('edit_id').value = id;
     document.getElementById('edit_nama').value = nama;
     document.getElementById('edit_materi').value = materi;
     document.getElementById('edit_waktu').value = waktu;
     document.getElementById('edit_kelas').value = kelas;
     document.getElementById('edit_biaya_kursus').value = biaya_kursus;
-    document.getElementById('edit_biaya_kelas').value = biaya_kelas;
+    document.getElementById('edit_biaya_kelas').value = biaya_kursus;
     document.getElementById('edit_total').value = total;
   }
 
@@ -302,9 +303,9 @@
         var waktu = this.getAttribute('data-waktu');
         var kelas = this.getAttribute('data-kelas');
         var biaya_kursus = this.getAttribute('data-biaya-kursus');
-        var biaya_kelas = this.getAttribute('data-biaya-kelas');
+        var biaya_kursus = this.getAttribute('data-biaya-kelas');
         var total = this.getAttribute('data-total');
-      fillEditModal(id, nama, materi, waktu, kelas, biaya_kursus, biaya_kelas, total);
+      fillEditModal(id, nama, materi, waktu, kelas, biaya_kursus, biaya_kursus, total);
     });
   });
 

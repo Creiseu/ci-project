@@ -1,0 +1,1267 @@
+ERROR - 2024-03-24 03:58:06 --> mysqli_sql_exception: Column 'kelas' cannot be null in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ku...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ku...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ku...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ku...', Array, false)
+#4 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ci-project\app\Controllers\Peserta.php(29): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Peserta->save()
+#9 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-24 03:58:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'kelas' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 03:58:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'kelas' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Sore - Malam\', NULL, \'3000000\', \'\', \'3300000\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Sore - Malam\', NULL, \'3000000\', \'\', \'3300000\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 03:58:06 --> [Caused by] mysqli_sql_exception: Column 'kelas' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Sore - Malam\', NULL, \'3000000\', \'\', \'3300000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Sore - Malam\', NULL, \'3000000\', \'\', \'3300000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Sore - Malam\', NULL, \'3000000\', \'\', \'3300000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+ERROR - 2024-03-24 04:06:35 --> mysqli_sql_exception: Column 'kelas' cannot be null in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ku...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ku...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ku...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ku...', Array, false)
+#4 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ci-project\app\Controllers\Peserta.php(29): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Peserta->save()
+#9 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-24 04:06:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'kelas' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 04:06:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'kelas' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Sore - Malam\', NULL, \'3000000\', \'\', \'3300000\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Sore - Malam\', NULL, \'3000000\', \'\', \'3300000\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 04:06:35 --> [Caused by] mysqli_sql_exception: Column 'kelas' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Sore - Malam\', NULL, \'3000000\', \'\', \'3300000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Sore - Malam\', NULL, \'3000000\', \'\', \'3300000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Sore - Malam\', NULL, \'3000000\', \'\', \'3300000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-03-24 04:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-24 04:15:12 --> mysqli_sql_exception: Column 'biaya_kursus' cannot be null in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ku...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ku...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ku...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ku...', Array, false)
+#4 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ci-project\app\Controllers\Peserta.php(29): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Peserta->save()
+#9 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-24 04:15:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 04:15:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Sore - Malam\', \'Intensif\', NULL, NULL, \'0\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Sore - Malam\', \'Intensif\', NULL, NULL, \'0\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 04:15:12 --> [Caused by] mysqli_sql_exception: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Sore - Malam\', \'Intensif\', NULL, NULL, \'0\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Sore - Malam\', \'Intensif\', NULL, NULL, \'0\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Sore - Malam\', \'Intensif\', NULL, NULL, \'0\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-03-24 04:15:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-24 04:22:27 --> mysqli_sql_exception: Column 'biaya_kursus' cannot be null in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ku...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ku...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ku...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ku...', Array, false)
+#4 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ci-project\app\Controllers\Peserta.php(29): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Peserta->save()
+#9 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-24 04:22:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 04:22:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Jerman\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Jerman\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 04:22:27 --> [Caused by] mysqli_sql_exception: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Jerman\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Jerman\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Jerman\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-03-24 04:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-03-24 04:23:08 --> mysqli_sql_exception: Column 'biaya_kursus' cannot be null in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ku...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ku...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ku...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ku...', Array, false)
+#4 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ci-project\app\Controllers\Peserta.php(29): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Peserta->save()
+#9 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-24 04:23:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 04:23:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 04:23:08 --> [Caused by] mysqli_sql_exception: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+ERROR - 2024-03-24 04:29:03 --> mysqli_sql_exception: Column 'biaya_kursus' cannot be null in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ku...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ku...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ku...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ku...', Array, false)
+#4 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ci-project\app\Controllers\Peserta.php(29): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Peserta->save()
+#9 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-24 04:29:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 04:29:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 04:29:03 --> [Caused by] mysqli_sql_exception: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+ERROR - 2024-03-24 04:42:53 --> mysqli_sql_exception: Column 'biaya_kursus' cannot be null in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ku...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ku...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ku...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ku...', Array, false)
+#4 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ci-project\app\Controllers\Peserta.php(29): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Peserta->save()
+#9 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-24 04:42:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 04:42:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Sore - Malam\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Sore - Malam\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 04:42:53 --> [Caused by] mysqli_sql_exception: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Sore - Malam\', \'Intensif\', NULL, NULL, \'3300000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Sore - Malam\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Sore - Malam\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+ERROR - 2024-03-24 04:55:24 --> mysqli_sql_exception: Column 'biaya_kursus' cannot be null in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ku...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ku...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ku...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ku...', Array, false)
+#4 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ci-project\app\Controllers\Peserta.php(29): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Peserta->save()
+#9 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-24 04:55:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 04:55:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 04:55:24 --> [Caused by] mysqli_sql_exception: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+ERROR - 2024-03-24 04:55:50 --> mysqli_sql_exception: Column 'biaya_kursus' cannot be null in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ku...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ku...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ku...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ku...', Array, false)
+#4 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ci-project\app\Controllers\Peserta.php(29): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Peserta->save()
+#9 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-24 04:55:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 04:55:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 04:55:50 --> [Caused by] mysqli_sql_exception: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+ERROR - 2024-03-24 04:55:53 --> mysqli_sql_exception: Column 'biaya_kursus' cannot be null in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ku...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ku...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ku...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ku...', Array, false)
+#4 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ci-project\app\Controllers\Peserta.php(29): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Peserta->save()
+#9 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-24 04:55:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 04:55:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 04:55:53 --> [Caused by] mysqli_sql_exception: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+ERROR - 2024-03-24 04:56:02 --> mysqli_sql_exception: Column 'biaya_kursus' cannot be null in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ku...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ku...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ku...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ku...', Array, false)
+#4 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ci-project\app\Controllers\Peserta.php(29): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Peserta->save()
+#9 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-24 04:56:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 04:56:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Sore - Malam\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Sore - Malam\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 04:56:02 --> [Caused by] mysqli_sql_exception: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Sore - Malam\', \'Intensif\', NULL, NULL, \'3300000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Sore - Malam\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Sore - Malam\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+ERROR - 2024-03-24 05:06:53 --> mysqli_sql_exception: Column 'biaya_kursus' cannot be null in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ku...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ku...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ku...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ku...', Array, false)
+#4 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ci-project\app\Controllers\Peserta.php(29): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Peserta->save()
+#9 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-24 05:06:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 05:06:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Sore - Malam\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Sore - Malam\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 05:06:53 --> [Caused by] mysqli_sql_exception: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Sore - Malam\', \'Intensif\', NULL, NULL, \'3300000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Sore - Malam\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Sore - Malam\', \'Intensif\', NULL, NULL, \'3300000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+ERROR - 2024-03-24 05:07:01 --> mysqli_sql_exception: Column 'biaya_kursus' cannot be null in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ku...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ku...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ku...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ku...', Array, false)
+#4 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ci-project\app\Controllers\Peserta.php(29): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Peserta->save()
+#9 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-24 05:07:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 05:07:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Sore - Malam\', \'Reguler\', NULL, NULL, \'5500000\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Sore - Malam\', \'Reguler\', NULL, NULL, \'5500000\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 05:07:01 --> [Caused by] mysqli_sql_exception: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Sore - Malam\', \'Reguler\', NULL, NULL, \'5500000\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Sore - Malam\', \'Reguler\', NULL, NULL, \'5500000\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Sore - Malam\', \'Reguler\', NULL, NULL, \'5500000\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+ERROR - 2024-03-24 05:16:03 --> mysqli_sql_exception: Column 'biaya_kursus' cannot be null in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ku...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ku...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ku...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ku...', Array, false)
+#4 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ci-project\app\Controllers\Peserta.php(29): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Peserta->save()
+#9 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-24 05:16:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 05:16:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 05:16:03 --> [Caused by] mysqli_sql_exception: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+ERROR - 2024-03-24 05:20:21 --> mysqli_sql_exception: Column 'biaya_kursus' cannot be null in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ku...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ku...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ku...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ku...', Array, false)
+#4 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ci-project\app\Controllers\Peserta.php(29): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Peserta->save()
+#9 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-24 05:20:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 05:20:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Sore - Malam\', \'Reguler\', NULL, NULL, \'\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Sore - Malam\', \'Reguler\', NULL, NULL, \'\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 05:20:21 --> [Caused by] mysqli_sql_exception: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Sore - Malam\', \'Reguler\', NULL, NULL, \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Sore - Malam\', \'Reguler\', NULL, NULL, \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Inggris\', \'Sore - Malam\', \'Reguler\', NULL, NULL, \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+ERROR - 2024-03-24 05:20:39 --> mysqli_sql_exception: Column 'biaya_kursus' cannot be null in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ku...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ku...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ku...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ku...', Array, false)
+#4 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(744): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ci-project\app\Controllers\Peserta.php(29): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Peserta->save()
+#9 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2024-03-24 05:20:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 2 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 05:20:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 4 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 05:20:39 --> [Caused by] mysqli_sql_exception: Column 'biaya_kursus' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (\'025/24/03/2024\', \'\', \'B.Mandarin\', \'Pagi - Siang\', \'Intensif\', NULL, NULL, \'\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kursus` (`nomor_daftar`, `nama`, `materi`, `waktu`, `kelas`, `biaya_kursus`, `biaya_kelas`, `total`) VALUES (:nomor_daftar:, :nama:, :materi:, :waktu:, :kelas:, :biaya_kursus:, :biaya_kelas:, :total:)', [...], false)
+ 5 SYSTEMPATH\Model.php(326): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(744): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Peserta.php(29): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-03-24 05:55:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 05:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 06:08:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 06:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 06:14:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 06:15:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-03-24 06:15:45 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH\Models\Peserta_form.php on line 18.
+ 1 APPPATH\Models\Peserta_form.php(18): explode('/', null)
+ 2 APPPATH\Controllers\Peserta.php(14): App\Models\Peserta_form->getLastNomorDaftar()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Peserta->save()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Peserta))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-03-24 06:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 06:28:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 06:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 06:28:34 --> ErrorException: Undefined variable $kursus
+in APPPATH\Views\kursus_view.php on line 33.
+ 1 APPPATH\Views\kursus_view.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kursus', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php', 33)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kursus_view', [], true)
+ 5 APPPATH\Controllers\Login.php(35): view('kursus_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Login->login_action()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-03-24 06:31:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 06:31:43 --> ErrorException: Undefined variable $kursus
+in APPPATH\Views\kursus_view.php on line 33.
+ 1 APPPATH\Views\kursus_view.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kursus', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php', 33)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kursus_view', [], true)
+ 5 APPPATH\Controllers\Login.php(35): view('kursus_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Login->login_action()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-03-24 06:35:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 06:35:38 --> ErrorException: Undefined variable $kursus
+in APPPATH\Views\kursus_view.php on line 33.
+ 1 APPPATH\Views\kursus_view.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kursus', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php', 33)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kursus_view', [], true)
+ 5 APPPATH\Controllers\Login.php(36): view('kursus_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Login->login_action()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-03-24 06:39:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 06:39:33 --> ErrorException: Undefined variable $kursus
+in APPPATH\Views\kursus_view.php on line 33.
+ 1 APPPATH\Views\kursus_view.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kursus', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php', 33)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kursus_view', [], true)
+ 5 APPPATH\Controllers\Login.php(36): view('kursus_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Login->login_action()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-03-24 06:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 06:39:43 --> ErrorException: Undefined variable $kursus
+in APPPATH\Views\kursus_view.php on line 33.
+ 1 APPPATH\Views\kursus_view.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kursus', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php', 33)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kursus_view', [], true)
+ 5 APPPATH\Controllers\Login.php(36): view('kursus_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Login->login_action()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-03-24 06:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 06:39:45 --> ErrorException: Undefined variable $kursus
+in APPPATH\Views\kursus_view.php on line 33.
+ 1 APPPATH\Views\kursus_view.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kursus', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php', 33)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kursus_view', [], true)
+ 5 APPPATH\Controllers\Login.php(36): view('kursus_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Login->login_action()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-03-24 06:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 06:42:16 --> ErrorException: Undefined variable $kursus
+in APPPATH\Views\kursus_view.php on line 33.
+ 1 APPPATH\Views\kursus_view.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kursus', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php', 33)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kursus_view', [], true)
+ 5 APPPATH\Controllers\Login.php(36): view('kursus_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Login->login_action()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-03-24 06:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 06:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 06:45:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 06:45:39 --> ErrorException: Undefined array key "product_name"
+in APPPATH\Views\kursus_view.php on line 36.
+ 1 APPPATH\Views\kursus_view.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_name"', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php', 36)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kursus_view', [], true)
+ 5 APPPATH\Controllers\Login.php(35): view('kursus_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Login->login_action()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-03-24 07:26:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 07:26:37 --> ErrorException: Undefined array key "product_id"
+in APPPATH\Views\kursus_view.php on line 55.
+ 1 APPPATH\Views\kursus_view.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_id"', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php', 55)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kursus_view', [], true)
+ 5 APPPATH\Controllers\Login.php(35): view('kursus_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Login->login_action()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-03-24 07:26:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 07:27:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 07:28:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 07:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 07:28:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 07:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 07:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 07:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 07:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 07:31:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 07:31:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 07:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 07:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 07:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 07:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 07:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 07:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 07:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 07:57:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 07:58:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 07:59:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 07:59:41 --> BadMethodCallException: Call to undefined method App\Models\Kursus_model::getLastNomorDaftar
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Kursus.php(54): CodeIgniter\Model->__call('getLastNomorDaftar', [])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Kursus->updateKursus()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kursus))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 08:00:43 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\Kursus_model"
+in SYSTEMPATH\BaseModel.php on line 1294.
+ 1 SYSTEMPATH\BaseModel.php(1294): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Kursus_model')
+ 2 SYSTEMPATH\BaseModel.php(965): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [...])
+ 4 APPPATH\Models\Kursus_model.php(41): CodeIgniter\Model->update(null, [...])
+ 5 APPPATH\Controllers\Kursus.php(89): App\Models\Kursus_model->updateKursus(null, [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Kursus->updateKursus()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kursus))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-03-24 08:00:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 08:00:58 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\Kursus_model"
+in SYSTEMPATH\BaseModel.php on line 1294.
+ 1 SYSTEMPATH\BaseModel.php(1294): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Kursus_model')
+ 2 SYSTEMPATH\BaseModel.php(965): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [...])
+ 4 APPPATH\Models\Kursus_model.php(41): CodeIgniter\Model->update(null, [...])
+ 5 APPPATH\Controllers\Kursus.php(89): App\Models\Kursus_model->updateKursus(null, [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Kursus->updateKursus()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kursus))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 08:03:47 --> CodeIgniter\Database\Exceptions\DataException: Allowed fields must be specified for model: "App\Models\Kursus_model"
+in SYSTEMPATH\BaseModel.php on line 1294.
+ 1 SYSTEMPATH\BaseModel.php(1294): CodeIgniter\Database\Exceptions\DataException::forInvalidAllowedFields('App\\Models\\Kursus_model')
+ 2 SYSTEMPATH\BaseModel.php(965): CodeIgniter\BaseModel->doProtectFields([...])
+ 3 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [...])
+ 4 APPPATH\Models\Kursus_model.php(41): CodeIgniter\Model->update(null, [...])
+ 5 APPPATH\Controllers\Kursus.php(89): App\Models\Kursus_model->updateKursus(null, [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Kursus->updateKursus()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kursus))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 08:06:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 388.
+ 1 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Models\Kursus_model.php(41): CodeIgniter\Model->update(null, [...])
+ 4 APPPATH\Controllers\Kursus.php(89): App\Models\Kursus_model->updateKursus(null, [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Kursus->updateKursus()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kursus))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 08:06:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 388.
+ 1 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Models\Kursus_model.php(41): CodeIgniter\Model->update(null, [...])
+ 4 APPPATH\Controllers\Kursus.php(89): App\Models\Kursus_model->updateKursus(null, [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Kursus->updateKursus()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kursus))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-03-24 08:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 08:09:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 388.
+ 1 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Models\Kursus_model.php(41): CodeIgniter\Model->update(null, [...])
+ 4 APPPATH\Controllers\Kursus.php(89): App\Models\Kursus_model->updateKursus(null, [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Kursus->updateKursus()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kursus))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 08:12:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 388.
+ 1 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Models\Kursus_model.php(41): CodeIgniter\Model->update(null, [...])
+ 4 APPPATH\Controllers\Kursus.php(89): App\Models\Kursus_model->updateKursus(null, [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Kursus->updateKursus()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kursus))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-03-24 08:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 08:13:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 388.
+ 1 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Models\Kursus_model.php(41): CodeIgniter\Model->update(null, [...])
+ 4 APPPATH\Controllers\Kursus.php(89): App\Models\Kursus_model->updateKursus(null, [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Kursus->updateKursus()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kursus))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 08:16:55 --> ErrorException: Undefined variable $kursus
+in APPPATH\Views\kursus_view.php on line 81.
+ 1 APPPATH\Views\kursus_view.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kursus', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php', 81)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kursus_view', [], true)
+ 5 APPPATH\Controllers\Kursus.php(90): view('kursus_view')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Kursus->updateKursus()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kursus))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-03-24 08:17:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:17:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 08:17:37 --> ErrorException: Undefined variable $kursus
+in APPPATH\Views\kursus_view.php on line 81.
+ 1 APPPATH\Views\kursus_view.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kursus', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php', 81)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kursus_view', [], true)
+ 5 APPPATH\Controllers\Kursus.php(90): view('kursus_view')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Kursus->updateKursus()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kursus))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-24 08:19:16 --> ArgumentCountError: Too few arguments to function App\Controllers\Kursus::updateKursus(), 0 passed in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Kursus.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Kursus->updateKursus()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kursus))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-03-24 08:20:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 08:20:14 --> ArgumentCountError: Too few arguments to function App\Controllers\Kursus::updateKursus(), 0 passed in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php on line 941 and exactly 1 expected
+in APPPATH\Controllers\Kursus.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Kursus->updateKursus()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kursus))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-03-24 08:20:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:20:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:21:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 08:23:32 --> ErrorException: Undefined variable $kursus
+in APPPATH\Views\kursus_view.php on line 81.
+ 1 APPPATH\Views\kursus_view.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kursus', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php', 81)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kursus_view', [], true)
+ 5 APPPATH\Controllers\Kursus.php(90): view('kursus_view')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Kursus->updateKursus()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kursus))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-03-24 08:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:44:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:44:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:45:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 08:47:06 --> ErrorException: Undefined variable $biayaKursus
+in APPPATH\Controllers\Kursus.php on line 75.
+ 1 APPPATH\Controllers\Kursus.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $biayaKursus', 'C:\\xampp\\htdocs\\ci-project\\app\\Controllers\\Kursus.php', 75)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Kursus->updateKursus()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kursus))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-03-24 08:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 08:59:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 09:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 09:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 09:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-24 09:06:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-03-24 09:07:04 --> ErrorException: Undefined variable $kursus
+in APPPATH\Views\kursus_view.php on line 81.
+ 1 APPPATH\Views\kursus_view.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kursus', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php', 81)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kursus_view', [], true)
+ 5 APPPATH\Controllers\Kursus.php(90): view('kursus_view')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Kursus->updateKursus()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kursus))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-03-24 09:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

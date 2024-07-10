@@ -9,7 +9,7 @@ class Peserta_form extends Model
     protected $table            = 'kursus';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
-    protected $allowedFields    = ['nomor_daftar', 'nama', 'materi', 'waktu', 'kelas', 'biaya_kursus', 'biaya_kelas', 'total'];
+    protected $allowedFields    = ['nomor_daftar', 'nama', 'materi', 'waktu', 'kelas', 'biaya_kursus', 'harga', 'total'];
 
     public function getLastNomorDaftar()
     {

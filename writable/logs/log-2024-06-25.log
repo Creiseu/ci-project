@@ -1,0 +1,1084 @@
+INFO - 2024-06-25 02:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:26:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:27:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:29:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:32:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 02:33:28 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Login.php(25): CodeIgniter\Model->__call('get_data', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Login->login_action()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-06-25 02:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 02:33:41 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Login.php(25): CodeIgniter\Model->__call('get_data', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Login->login_action()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-06-25 02:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 02:35:51 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(662): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(864): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Login.php(25): CodeIgniter\Model->__call('get_data', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Login->login_action()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-06-25 02:36:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:36:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-25 02:37:19 --> mysqli_sql_exception: Table 'ci4.user' doesn't exist in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci-project\app\Models\M_user.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci-project\app\Controllers\Login.php(25): App\Models\M_user->get_data(NULL, '1234')
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Login->login_action()
+#7 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-06-25 02:37:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `role` IS NULL', [], false)
+ 2 APPPATH\Models\M_user.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Login.php(25): App\Models\M_user->get_data(null, '1234')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Login->login_action()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 02:37:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.user' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user`
+WHERE `role` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user`
+WHERE `role` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `role` IS NULL', [], false)
+ 4 APPPATH\Models\M_user.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Login.php(25): App\Models\M_user->get_data(null, '1234')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Login->login_action()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 02:37:19 --> [Caused by] mysqli_sql_exception: Table 'ci4.user' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `user`
+WHERE `role` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user`
+WHERE `role` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user`
+WHERE `role` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `role` IS NULL', [], false)
+ 5 APPPATH\Models\M_user.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Login.php(25): App\Models\M_user->get_data(null, '1234')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Login->login_action()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-06-25 02:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 02:37:39 --> Error: Class "App\Models\M_user" not found
+in APPPATH\Controllers\Login.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Login->login_action()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-06-25 02:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-25 02:38:25 --> mysqli_sql_exception: Unknown column 'nama' in 'where clause' in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci-project\app\Controllers\LoginController.php(30): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\LoginController->login()
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#9 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-06-25 02:38:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nama' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `nama` = :nama:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\LoginController.php(30): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LoginController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 02:38:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `nama` = \'admin\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `nama` = \'admin\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `nama` = :nama:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\LoginController.php(30): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 02:38:25 --> [Caused by] mysqli_sql_exception: Unknown column 'nama' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `users`
+WHERE `nama` = \'admin\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `nama` = \'admin\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `nama` = \'admin\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `nama` = :nama:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\LoginController.php(30): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LoginController->login()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-06-25 02:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:41:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:43:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:43:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-06-25 02:47:41 --> [DEPRECATED] password_hash(): Passing null to parameter #1 ($password) of type string is deprecated in APPPATH\Controllers\LoginController.php on line 55.
+ 1 APPPATH\Controllers\LoginController.php(55): password_hash(Object(SensitiveParameterValue), '2y')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LoginController->register()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-06-25 02:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:49:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:49:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:49:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:52:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:52:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:52:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:54:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:55:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 02:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:00:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:00:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-25 03:08:25 --> mysqli_sql_exception: Unknown column 'users.deleted_at' in 'where clause' in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci-project\app\Controllers\LoginController.php(24): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\LoginController->login()
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#9 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-06-25 03:08:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\LoginController.php(24): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LoginController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 03:08:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\LoginController.php(24): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 03:08:25 --> [Caused by] mysqli_sql_exception: Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\LoginController.php(24): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LoginController->login()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-06-25 03:10:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:10:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-25 03:10:45 --> mysqli_sql_exception: Unknown column 'users.deleted_at' in 'where clause' in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci-project\app\Controllers\LoginController.php(30): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\LoginController->login()
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#9 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-06-25 03:10:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\LoginController.php(30): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LoginController->login()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 03:10:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\LoginController.php(30): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LoginController->login()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 03:10:45 --> [Caused by] mysqli_sql_exception: Unknown column 'users.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\LoginController.php(30): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LoginController->login()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-06-25 03:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:11:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:11:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:11:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 03:12:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "customer.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('customer.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('customer', [], true)
+ 3 APPPATH\Controllers\LoginController.php(37): view('customer')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\LoginController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-06-25 03:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:25:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:27:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:27:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:27:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:28:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:29:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 03:29:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('admin', [], true)
+ 3 APPPATH\Controllers\AuthController.php(35): view('admin')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-06-25 03:30:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 03:30:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Admin/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Admin/index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/index', [], true)
+ 3 APPPATH\Controllers\AuthController.php(35): view('Admin/index')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-06-25 03:30:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 03:30:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Admin/index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Admin/index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/index', [], true)
+ 3 APPPATH\Controllers\AuthController.php(35): view('Admin/index')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AuthController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-06-25 03:30:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 03:30:51 --> ErrorException: Undefined array key "harga"
+in APPPATH\Views\kursus_view.php on line 91.
+ 1 APPPATH\Views\kursus_view.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "harga"', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php', 91)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kursus_view', [], true)
+ 5 APPPATH\Controllers\Kursus.php(16): view('kursus_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Kursus->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kursus))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 03:31:21 --> ErrorException: Undefined array key "harga"
+in APPPATH\Views\kursus_view.php on line 98.
+ 1 APPPATH\Views\kursus_view.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "harga"', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php', 98)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\kursus_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('kursus_view', [], true)
+ 5 APPPATH\Controllers\Kursus.php(16): view('kursus_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Kursus->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kursus))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+ERROR - 2024-06-25 03:38:25 --> mysqli_sql_exception: Can't create table `ci4`.`products` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `p...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 C:\xampp\htdocs\ci-project\app\Database\Migrations\2024-06-25-033305_CreateProductsTable.php(62): CodeIgniter\Database\Forge->createTable('products')
+#5 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(865): App\Database\Migrations\CreateProductsTable->up()
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\ci-project\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+INFO - 2024-06-25 03:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 03:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 03:51:02 --> ErrorException: Undefined variable $kursus
+in APPPATH\Views\Admin\index.php on line 81.
+ 1 APPPATH\Views\Admin\index.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kursus', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\Admin\\index.php', 81)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\Admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/index', [], true)
+ 5 APPPATH\Controllers\AdminController.php(15): view('Admin/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 03:52:38 --> ErrorException: Undefined variable $product
+in APPPATH\Views\Admin\index.php on line 81.
+ 1 APPPATH\Views\Admin\index.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\Admin\\index.php', 81)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\Admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/index', [], true)
+ 5 APPPATH\Controllers\AdminController.php(15): view('Admin/index', [])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 03:52:47 --> ErrorException: Undefined variable $produk
+in APPPATH\Views\Admin\index.php on line 81.
+ 1 APPPATH\Views\Admin\index.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produk', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\Admin\\index.php', 81)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\Admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/index', [], true)
+ 5 APPPATH\Controllers\AdminController.php(15): view('Admin/index', [])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 03:54:13 --> ErrorException: Undefined variable $produk
+in APPPATH\Views\Admin\index.php on line 81.
+ 1 APPPATH\Views\Admin\index.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produk', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\Admin\\index.php', 81)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\Admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/index', [], true)
+ 5 APPPATH\Controllers\AdminController.php(15): view('Admin/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 03:54:15 --> ErrorException: Undefined variable $produk
+in APPPATH\Views\Admin\index.php on line 81.
+ 1 APPPATH\Views\Admin\index.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produk', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\Admin\\index.php', 81)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\Admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/index', [], true)
+ 5 APPPATH\Controllers\AdminController.php(15): view('Admin/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 03:54:16 --> ErrorException: Undefined variable $produk
+in APPPATH\Views\Admin\index.php on line 81.
+ 1 APPPATH\Views\Admin\index.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produk', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\Admin\\index.php', 81)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\Admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/index', [], true)
+ 5 APPPATH\Controllers\AdminController.php(15): view('Admin/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 03:54:17 --> ErrorException: Undefined variable $produk
+in APPPATH\Views\Admin\index.php on line 81.
+ 1 APPPATH\Views\Admin\index.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produk', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\Admin\\index.php', 81)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\Admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/index', [], true)
+ 5 APPPATH\Controllers\AdminController.php(15): view('Admin/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 03:54:17 --> ErrorException: Undefined variable $produk
+in APPPATH\Views\Admin\index.php on line 81.
+ 1 APPPATH\Views\Admin\index.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produk', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\Admin\\index.php', 81)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\Admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/index', [], true)
+ 5 APPPATH\Controllers\AdminController.php(15): view('Admin/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 04:07:00 --> ErrorException: Undefined variable $row
+in APPPATH\Views\Admin\index.php on line 62.
+ 1 APPPATH\Views\Admin\index.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\Admin\\index.php', 62)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\Admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/index', [], true)
+ 5 APPPATH\Controllers\AdminController.php(15): view('Admin/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-06-25 04:31:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 04:37:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 04:37:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 04:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 04:38:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 04:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 04:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 04:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 04:39:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 04:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 04:46:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 04:52:58 --> ErrorException: Undefined array key "image"
+in APPPATH\Views\Admin\index.php on line 90.
+ 1 APPPATH\Views\Admin\index.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "image"', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\Admin\\index.php', 90)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\Admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/index', [], true)
+ 5 APPPATH\Controllers\AdminController.php(15): view('Admin/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 04:53:18 --> ErrorException: Undefined array key "product_name"
+in APPPATH\Views\Admin\index.php on line 90.
+ 1 APPPATH\Views\Admin\index.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_name"', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\Admin\\index.php', 90)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\Admin\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Admin/index', [], true)
+ 5 APPPATH\Controllers\AdminController.php(15): view('Admin/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AdminController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-06-25 04:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 05:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 05:17:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 05:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-25 07:07:53 --> mysqli_sql_exception: Table 'ci4.product' doesn't exist in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pr...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 C:\xampp\htdocs\ci-project\app\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\ci-project\app\Controllers\Product.php(55): App\Models\Product_model->deleteProduct(NULL)
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Product->delete()
+#7 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-06-25 07:07:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.product' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `product`
+WHERE `product_id` IS NULL', [], false)
+ 2 APPPATH\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Product.php(55): App\Models\Product_model->deleteProduct(null)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 07:07:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.product' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `product`
+WHERE `product_id` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `product`
+WHERE `product_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `product`
+WHERE `product_id` IS NULL', [], false)
+ 4 APPPATH\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 APPPATH\Controllers\Product.php(55): App\Models\Product_model->deleteProduct(null)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->delete()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 07:07:53 --> [Caused by] mysqli_sql_exception: Table 'ci4.product' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `product`
+WHERE `product_id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `product`
+WHERE `product_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `product`
+WHERE `product_id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `product`
+WHERE `product_id` IS NULL', [], false)
+ 5 APPPATH\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\Product.php(55): App\Models\Product_model->deleteProduct(null)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->delete()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+ERROR - 2024-06-25 07:10:41 --> mysqli_sql_exception: Table 'ci4.product' doesn't exist in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pr...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 C:\xampp\htdocs\ci-project\app\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\ci-project\app\Controllers\Product.php(55): App\Models\Product_model->deleteProduct(NULL)
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Product->delete()
+#7 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-06-25 07:10:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.product' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `product`
+WHERE `product_id` IS NULL', [], false)
+ 2 APPPATH\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Product.php(55): App\Models\Product_model->deleteProduct(null)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 07:10:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4.product' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `product`
+WHERE `product_id` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `product`
+WHERE `product_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `product`
+WHERE `product_id` IS NULL', [], false)
+ 4 APPPATH\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 APPPATH\Controllers\Product.php(55): App\Models\Product_model->deleteProduct(null)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->delete()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 07:10:41 --> [Caused by] mysqli_sql_exception: Table 'ci4.product' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `product`
+WHERE `product_id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `product`
+WHERE `product_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `product`
+WHERE `product_id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `product`
+WHERE `product_id` IS NULL', [], false)
+ 5 APPPATH\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\Product.php(55): App\Models\Product_model->deleteProduct(null)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->delete()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+ERROR - 2024-06-25 07:11:49 --> mysqli_sql_exception: Unknown column 'product_id' in 'where clause' in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pr...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 C:\xampp\htdocs\ci-project\app\Models\Product.php(54): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\ci-project\app\Controllers\AdminController.php(79): App\Models\Product->deleteProduct(NULL)
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\AdminController->delete()
+#7 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-06-25 07:11:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `product_id` IS NULL', [], false)
+ 2 APPPATH\Models\Product.php(54): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\AdminController.php(79): App\Models\Product->deleteProduct(null)
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AdminController->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 07:11:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `products`
+WHERE `product_id` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `products`
+WHERE `product_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `product_id` IS NULL', [], false)
+ 4 APPPATH\Models\Product.php(54): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 APPPATH\Controllers\AdminController.php(79): App\Models\Product->deleteProduct(null)
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AdminController->delete()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 07:11:49 --> [Caused by] mysqli_sql_exception: Unknown column 'product_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `products`
+WHERE `product_id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `products`
+WHERE `product_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `products`
+WHERE `product_id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `product_id` IS NULL', [], false)
+ 5 APPPATH\Models\Product.php(54): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\AdminController.php(79): App\Models\Product->deleteProduct(null)
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\AdminController->delete()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-06-25 07:34:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 388.
+ 1 SYSTEMPATH\BaseModel.php(987): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(807): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Models\Product_model.php(25): CodeIgniter\Model->update(null, [...])
+ 4 APPPATH\Controllers\Product.php(48): App\Models\Product_model->updateProduct(null, [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->updateProduct()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-06-25 07:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:58:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:59:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 07:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:00:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:01:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:02:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-25 08:08:59 --> mysqli_sql_exception: Table 'products' already exists in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `p...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 C:\xampp\htdocs\ci-project\app\Database\Migrations\2024-06-25-080446_CreateCartsTable.php(42): CodeIgniter\Database\Forge->createTable('products')
+#5 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(865): App\Database\Migrations\CreateCartsTable->up()
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\ci-project\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2024-06-25 08:09:38 --> mysqli_sql_exception: Can't create table `ci4`.`carts` (errno: 150 "Foreign key constraint is incorrectly formed") in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `c...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `c...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `c...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\Forge.php(555): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `c...')
+#4 C:\xampp\htdocs\ci-project\app\Database\Migrations\2024-06-25-080446_CreateCartsTable.php(42): CodeIgniter\Database\Forge->createTable('carts')
+#5 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(865): App\Database\Migrations\CreateCartsTable->up()
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MigrationRunner.php(181): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\xampp\htdocs\ci-project\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+INFO - 2024-06-25 08:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:10:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:13:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:13:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:13:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:13:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:30:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:30:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:32:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 08:35:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 12:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 12:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 12:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 12:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 12:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 12:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 12:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 12:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 12:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 12:52:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 12:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 12:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 12:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 12:53:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 12:56:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:02:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:03:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:03:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:15:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 13:15:10 --> ErrorException: Undefined array key "image"
+in APPPATH\Views\Cart\index.php on line 41.
+ 1 APPPATH\Views\Cart\index.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "image"', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\Cart\\index.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\Cart\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Cart/index', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(36): view('Cart/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CustomerController->viewCart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-06-25 13:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:22:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:22:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:22:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:25:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-25 13:33:24 --> ErrorException: Undefined array key "price"
+in APPPATH\Views\Cart\index.php on line 84.
+ 1 APPPATH\Views\Cart\index.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "price"', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\Cart\\index.php', 84)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\Cart\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Cart/index', [], true)
+ 5 APPPATH\Controllers\CustomerController.php(55): view('Cart/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\CustomerController->viewCart()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CustomerController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+INFO - 2024-06-25 13:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:39:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:39:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:40:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:41:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:42:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:42:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:44:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:44:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:46:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-25 13:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

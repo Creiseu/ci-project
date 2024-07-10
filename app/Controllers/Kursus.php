@@ -60,16 +60,16 @@ class Kursus extends BaseController
         $waktu = $this->request->getPost('edit_waktu');
         $kelas = $this->request->getPost('edit_kelas');
         // Logika perhitungan biaya berdasarkan pilihan
-        if ($materi == 'B.Inggris' && ($waktu == 'Pagi - Siang' || $waktu == 'Sore - Malam') && $kelas == 'Reguler') {
+        if ($materi == 'Men' && ($waktu == 'Pagi - Siang' || $waktu == 'Sore - Malam') && $kelas == 'Reguler') {
             $biayaKursus = 10000000;
             $biayaKelas = 1000000;
-        } else if ($materi == 'B.Mandarin' && ($waktu == 'Pagi - Siang' || $waktu == 'Sore - Malam') && $kelas == 'Reguler') {
+        } else if ($materi == 'Women' && ($waktu == 'Pagi - Siang' || $waktu == 'Sore - Malam') && $kelas == 'Reguler') {
             $biayaKursus = 5000000;
             $biayaKelas = 500000;
-        } else if ($materi == 'B.Jerman' && ($waktu == 'Pagi - Siang' || $waktu == 'Sore - Malam') && $kelas == 'Reguler') {
+        } else if ($materi == 'Kids' && ($waktu == 'Pagi - Siang' || $waktu == 'Sore - Malam') && $kelas == 'Reguler') {
             $biayaKursus = 1000000;
             $biayaKelas = 100000;
-        } else if (($materi == 'B.Inggris' || $materi == 'B.Mandarin' || $materi == 'B.Jerman') && ($waktu == 'Pagi - Siang' || $waktu == 'Sore - Malam') && $kelas == 'Intensif') {
+        } else if (($materi == 'Men' || $materi == 'Women' || $materi == 'Kids') && ($waktu == 'Pagi - Siang' || $waktu == 'Sore - Malam') && $kelas == 'Intensif') {
             $biayaKursus = 3000000;
             $biayaKelas = 300000;
         }
@@ -83,7 +83,7 @@ class Kursus extends BaseController
             'waktu'        => $this->request->getPost('edit_waktu'),
             'kelas'        => $this->request->getPost('edit_kelas'),
             'biaya_kursus' => $biayaKursus,
-            'biaya_kelas'  => $biayaKelas,
+            'harga'  => $biayaKelas,
             'total'        => $total
         ];
 

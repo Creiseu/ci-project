@@ -1,0 +1,368 @@
+CRITICAL - 2024-03-18 12:56:44 --> CodeIgniter\Router\Exceptions\RouterException: The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\ProductController/updateProduct"
+in SYSTEMPATH\Router\Router.php on line 479.
+ 1 SYSTEMPATH\Router\Router.php(479): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\ProductController/updateProduct')
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('product/update')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('product/update')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-18 13:03:45 --> BadMethodCallException: Call to undefined method App\Models\Product_model::updateProduct
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Product.php(48): CodeIgniter\Model->__call('updateProduct', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->updateProduct()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-18 13:10:57 --> BadMethodCallException: Call to undefined method App\Models\Product_model::updateProduct
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Product.php(48): CodeIgniter\Model->__call('updateProduct', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->updateProduct()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-18 13:11:31 --> BadMethodCallException: Call to undefined method App\Models\Product_model::updateProduct
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Product.php(48): CodeIgniter\Model->__call('updateProduct', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->updateProduct()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-18 13:18:45 --> BadMethodCallException: Call to undefined method App\Models\Product_model::getProduct
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Controllers\Product.php(11): CodeIgniter\Model->__call('getProduct', [])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-18 13:30:12 --> ErrorException: Cannot redeclare App\Controllers\Product::delete()
+in APPPATH\Controllers\Product.php on line 61.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-18 13:30:12 --> ErrorException: Cannot redeclare App\Controllers\Product::delete()
+in APPPATH\Controllers\Product.php on line 61.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-18 13:30:14 --> ErrorException: Cannot redeclare App\Controllers\Product::delete()
+in APPPATH\Controllers\Product.php on line 61.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-18 13:30:16 --> ErrorException: Cannot redeclare App\Controllers\Product::delete()
+in APPPATH\Controllers\Product.php on line 61.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-18 13:30:16 --> ErrorException: Cannot redeclare App\Controllers\Product::delete()
+in APPPATH\Controllers\Product.php on line 61.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-18 13:30:18 --> ErrorException: Cannot redeclare App\Controllers\Product::delete()
+in APPPATH\Controllers\Product.php on line 61.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-18 13:30:39 --> ErrorException: Cannot redeclare App\Controllers\Product::delete()
+in APPPATH\Controllers\Product.php on line 60.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-18 13:30:42 --> ErrorException: Cannot redeclare App\Controllers\Product::delete()
+in APPPATH\Controllers\Product.php on line 60.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-18 13:31:11 --> ErrorException: Cannot redeclare App\Controllers\Product::delete()
+in APPPATH\Controllers\Product.php on line 61.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-18 13:31:51 --> ErrorException: Cannot redeclare App\Controllers\Product::delete()
+in APPPATH\Controllers\Product.php on line 61.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+ERROR - 2024-03-18 13:37:37 --> mysqli_sql_exception: Table 'latihan_ci.products' doesn't exist in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pr...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 C:\xampp\htdocs\ci-project\app\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\ci-project\app\Controllers\Product.php(55): App\Models\Product_model->deleteProduct('9')
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Product->delete()
+#7 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-03-18 13:37:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'latihan_ci.products' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `product_id` = :product_id:', [...], false)
+ 2 APPPATH\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Product.php(55): App\Models\Product_model->deleteProduct('9')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-18 13:37:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'latihan_ci.products' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `products`
+WHERE `product_id` = \'9\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `products`
+WHERE `product_id` = \'9\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `product_id` = :product_id:', [...], false)
+ 4 APPPATH\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 APPPATH\Controllers\Product.php(55): App\Models\Product_model->deleteProduct('9')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->delete()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-18 13:37:37 --> [Caused by] mysqli_sql_exception: Table 'latihan_ci.products' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `products`
+WHERE `product_id` = \'9\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `products`
+WHERE `product_id` = \'9\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `products`
+WHERE `product_id` = \'9\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `product_id` = :product_id:', [...], false)
+ 5 APPPATH\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\Product.php(55): App\Models\Product_model->deleteProduct('9')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->delete()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+ERROR - 2024-03-18 13:37:58 --> mysqli_sql_exception: Table 'latihan_ci.products' doesn't exist in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pr...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 C:\xampp\htdocs\ci-project\app\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\ci-project\app\Controllers\Product.php(55): App\Models\Product_model->deleteProduct('10')
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Product->delete()
+#7 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-03-18 13:37:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'latihan_ci.products' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `product_id` = :product_id:', [...], false)
+ 2 APPPATH\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Product.php(55): App\Models\Product_model->deleteProduct('10')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-18 13:37:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'latihan_ci.products' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `products`
+WHERE `product_id` = \'10\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `products`
+WHERE `product_id` = \'10\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `product_id` = :product_id:', [...], false)
+ 4 APPPATH\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 APPPATH\Controllers\Product.php(55): App\Models\Product_model->deleteProduct('10')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->delete()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-18 13:37:58 --> [Caused by] mysqli_sql_exception: Table 'latihan_ci.products' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `products`
+WHERE `product_id` = \'10\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `products`
+WHERE `product_id` = \'10\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `products`
+WHERE `product_id` = \'10\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `product_id` = :product_id:', [...], false)
+ 5 APPPATH\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\Product.php(55): App\Models\Product_model->deleteProduct('10')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->delete()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+ERROR - 2024-03-18 13:38:59 --> mysqli_sql_exception: Table 'latihan_ci.products' doesn't exist in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pr...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 C:\xampp\htdocs\ci-project\app\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\ci-project\app\Controllers\Product.php(55): App\Models\Product_model->deleteProduct('10')
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Product->delete()
+#7 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-03-18 13:38:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'latihan_ci.products' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `product_id` = :product_id:', [...], false)
+ 2 APPPATH\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Product.php(55): App\Models\Product_model->deleteProduct('10')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-18 13:38:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'latihan_ci.products' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `products`
+WHERE `product_id` = \'10\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `products`
+WHERE `product_id` = \'10\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `product_id` = :product_id:', [...], false)
+ 4 APPPATH\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 APPPATH\Controllers\Product.php(55): App\Models\Product_model->deleteProduct('10')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->delete()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-18 13:38:59 --> [Caused by] mysqli_sql_exception: Table 'latihan_ci.products' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `products`
+WHERE `product_id` = \'10\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `products`
+WHERE `product_id` = \'10\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `products`
+WHERE `product_id` = \'10\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `product_id` = :product_id:', [...], false)
+ 5 APPPATH\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\Product.php(55): App\Models\Product_model->deleteProduct('10')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->delete()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+ERROR - 2024-03-18 13:39:24 --> mysqli_sql_exception: Table 'latihan_ci.products' doesn't exist in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pr...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 C:\xampp\htdocs\ci-project\app\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\ci-project\app\Controllers\Product.php(55): App\Models\Product_model->deleteProduct('11')
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Product->delete()
+#7 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-03-18 13:39:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'latihan_ci.products' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `product_id` = :product_id:', [...], false)
+ 2 APPPATH\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Product.php(55): App\Models\Product_model->deleteProduct('11')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-18 13:39:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'latihan_ci.products' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `products`
+WHERE `product_id` = \'11\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `products`
+WHERE `product_id` = \'11\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `product_id` = :product_id:', [...], false)
+ 4 APPPATH\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 APPPATH\Controllers\Product.php(55): App\Models\Product_model->deleteProduct('11')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->delete()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-18 13:39:24 --> [Caused by] mysqli_sql_exception: Table 'latihan_ci.products' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `products`
+WHERE `product_id` = \'11\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `products`
+WHERE `product_id` = \'11\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `products`
+WHERE `product_id` = \'11\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `product_id` = :product_id:', [...], false)
+ 5 APPPATH\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\Product.php(55): App\Models\Product_model->deleteProduct('11')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->delete()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+ERROR - 2024-03-18 13:39:40 --> mysqli_sql_exception: Table 'latihan_ci.products' doesn't exist in C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pr...', 0)
+#1 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 C:\xampp\htdocs\ci-project\app\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\ci-project\app\Controllers\Product.php(55): App\Models\Product_model->deleteProduct('8')
+#6 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Product->delete()
+#7 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+#8 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci-project\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci-project\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2024-03-18 13:39:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'latihan_ci.products' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `product_id` = :product_id:', [...], false)
+ 2 APPPATH\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\Product.php(55): App\Models\Product_model->deleteProduct('8')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-18 13:39:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'latihan_ci.products' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `products`
+WHERE `product_id` = \'8\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `products`
+WHERE `product_id` = \'8\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `product_id` = :product_id:', [...], false)
+ 4 APPPATH\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 APPPATH\Controllers\Product.php(55): App\Models\Product_model->deleteProduct('8')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->delete()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-18 13:39:40 --> [Caused by] mysqli_sql_exception: Table 'latihan_ci.products' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `products`
+WHERE `product_id` = \'8\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `products`
+WHERE `product_id` = \'8\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `products`
+WHERE `product_id` = \'8\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2787): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `product_id` = :product_id:', [...], false)
+ 5 APPPATH\Models\Product_model.php(29): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\Product.php(55): App\Models\Product_model->deleteProduct('8')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->delete()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')
+CRITICAL - 2024-03-18 14:15:20 --> ErrorException: Undefined array key "product_nam\e"
+in APPPATH\Views\product_view.php on line 45.
+ 1 APPPATH\Views\product_view.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_nam\\e"', 'C:\\xampp\\htdocs\\ci-project\\app\\Views\\product_view.php', 45)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci-project\\app\\Views\\product_view.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('product_view', [], true)
+ 5 APPPATH\Controllers\Product.php(12): view('product_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Product->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Product))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci-project\\public\\index.php')

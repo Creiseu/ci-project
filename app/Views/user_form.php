@@ -13,38 +13,29 @@
 </head>
 
 <body>
-
    <div class="container">
-      <div class="row">
-         <div class="col-md-4 mx-auto pt-5">
-            <form method="POST" action="<?= base_url('login/data'); ?>">
-                <div class="form-group">
-                    <label for="role">Role</label>
-                    <select name="role" class="form-control" id="role">
-                        <option value="admin">Admin</option>
-                        <option value="peserta">Peserta</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                  <label for="password">Password</label>
-                  <input type="password" name="password" class="form-control" id="password">
-                </div>
-                <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Login</button>
-            </form>
-            <p>
-               <?php if (!empty(session()->getFlashdata('gagal'))) { ?>
-                  <div class="alert alert-warning">
-                     <?php echo session()->getFlashdata('gagal') ?>
-                  </div>
-               <?php } ?>
-            </p>
+      <h2>Login</h2>
+      <?php if (session()->getFlashdata('error')): ?>
+         <div class="alert alert-danger"><?= session()->getFlashdata('error') ?></div>
+      <?php endif; ?>
+      <form method="POST" action="<?= base_url('login/data'); ?>">
+         <?= csrf_field() ?>
+         <div class="form-group">
+               <label for="username">Username</label>
+               <input type="text" name="username" class="form-control" id="username">
          </div>
-      </div>
-   </div>
+         <div class="form-group">
+               <label for="password">Password</label>
+               <input type="password" name="password" class="form-control" id="password">
+         </div>
+         <div class="form-group form-check">
+               <input type="checkbox" class="form-check-input" id="exampleCheck1">
+               <label class="form-check-label" for="exampleCheck1">Check me out</label>
+         </div>
+         <button type="submit" class="btn btn-primary">Login</button>
+         <a href="register">belum punya akun?</a>
+      </form>
+    </div>
 
    <!-- Optional JavaScript -->
    <!-- jQuery first, then Popper.js, then Bootstrap JS -->

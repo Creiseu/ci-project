@@ -27,25 +27,25 @@
                 var biayaKursus = "";
                 var biayaKelas = "";
 
-                if (materi == 'B.Inggris' && (waktu == 'Pagi - Siang' || waktu == 'Sore - Malam') && kelas == 'Reguler') {
+                if (materi == 'Men' && (waktu == 'Pagi - Siang' || waktu == 'Sore - Malam') && kelas == 'Reguler') {
                     biayaKursus = 10000000;
                     biayaKelas = 1000000;
                     $('#biaya_kursus').val(biayaKursus);
                     $('#biaya_kelas').val(biayaKelas);
                     $('#total').val(biayaKursus + biayaKelas);
-                } else if (materi == 'B.Mandarin' && (waktu == 'Pagi - Siang' || waktu == 'Sore - Malam') && kelas == 'Reguler') {
+                } else if (materi == 'Women' && (waktu == 'Pagi - Siang' || waktu == 'Sore - Malam') && kelas == 'Reguler') {
                     biayaKursus = 5000000;
                     biayaKelas = 500000;
                     $('#biaya_kursus').val(biayaKursus);
                     $('#biaya_kelas').val(biayaKelas);
                     $('#total').val(biayaKursus + biayaKelas);
-                } else if (materi == 'B.Jerman' && (waktu == 'Pagi - Siang' || waktu == 'Sore - Malam') && kelas == 'Reguler') {
+                } else if (materi == 'Kids' && (waktu == 'Pagi - Siang' || waktu == 'Sore - Malam') && kelas == 'Reguler') {
                     biayaKursus = 1000000;
                     biayaKelas = 100000;
                     $('#biaya_kursus').val(biayaKursus);
                     $('#biaya_kelas').val(biayaKelas);
                     $('#total').val(biayaKursus + biayaKelas);
-                } else if ((materi == 'B.Inggris' || materi == 'B.Mandarin' || materi == 'B.Jerman') && (waktu == 'Pagi - Siang' || waktu == 'Sore - Malam') && kelas == 'Intensif') {
+                } else if ((materi == 'Men' || materi == 'Women' || materi == 'Kids') && (waktu == 'Pagi - Siang' || waktu == 'Sore - Malam') && kelas == 'Intensif') {
                     biayaKursus = 3000000;
                     biayaKelas = 300000;
                     $('#biaya_kursus').val(biayaKursus);
@@ -86,9 +86,9 @@
             <label for="materi" class="form-label">Pilihan Materi</label>
             <select id="materi" name="materi" class="form-select">
                 <option selected disabled>Choose...</option>
-                <option value="B.Inggris">B.Inggris</option>
-                <option value="B.Mandarin">B.Mandarin</option>
-                <option value="B.Jerman">B.Jerman</option>
+                <option value="Men">Men</option>
+                <option value="Women">Women</option>
+                <option value="Kids">Kids</option>
             </select>
         </div>
         <div class="col-md-4">

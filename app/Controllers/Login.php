@@ -16,7 +16,7 @@ class Login extends BaseController
    
     public function login_action() 
     {
-        $muser = new M_user();
+        $muser = new User();
             
         $role = $this->request->getPost('role');
         // $email = $this->request->getPost('email');

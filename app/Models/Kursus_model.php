@@ -12,7 +12,7 @@ class Kursus_model extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id', 'nomor_daftar', 'nama', 'materi', 'waktu', 'kelas', 'biaya_kursus', 'biaya_kelas', 'total'];
+    protected $allowedFields    = ['id', 'nomor_daftar', 'nama', 'materi', 'waktu', 'kelas', 'biaya_kursus', 'harga', 'total'];
 
     public function getKursus($id = false)
     {
